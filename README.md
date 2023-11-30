@@ -4,7 +4,7 @@ Github para realização das atividades de Programação Guiada propostas pelo p
 Cada PG possui sua própria pasta, que por sua vez contém as versões finais do código fonte, códigos e arquivos recebidos pelo professor e um relatório sucinto dos resultados da atividade.
 
 Alunos responsáveis:
-- Eduardo Dalmás Faé (00334087)
-- João Pedro Kuhn Braun ()
-- Giordano Souza ()
+- Eduardo Dalmás Faé (334087)
+- João Pedro Kuhn Braun (325265)
+- Giordano Souza de Paula (308054)
 
