@@ -55,3 +55,51 @@ def test_sum(calculator_client):
 
     # then
     assert result.s == expected
+
+
+def test_multiply(calculator_client):
+    from calculator_pb2 import MultiplyRequest
+
+    # given
+    a = 256.5
+    b = 128.8
+
+    expected = a * b
+
+    # when
+    result = calculator_client.Multiply(MultiplyRequest(a=a, b=b))
+
+    # then
+    assert result.s == expected
+
+def test_max(calculator_client):
+    from calculator_pb2 import MaxRequest
+
+    # given
+    a = 256.5
+    b = 128.8
+    c = 64.4
+
+    expected = max(a, b, c)
+
+    # when
+    result = calculator_client.Max(MaxRequest(a=a, b=b, c=c))
+
+    # then
+    assert result.s == expected
+
+def test_division(calculator_client):
+    from calculator_pb2 import DivisionRequest
+
+    # given
+    a = 256
+    b = 128
+
+    expected_q = int(a / b)
+    expected_r = a % b
+
+    # when
+    result = calculator_client.Division(DivisionRequest(a=a, b=b))
+
+    # then
+    assert result.q == expected_q and result.r == expected_r
